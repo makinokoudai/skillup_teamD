@@ -18,6 +18,9 @@ curry_sales = curry_num * CURRY_PRICE
 # 合計金額を計算
 total_sales = chikin_sales + curry_sales
 
-total_cost = Decimal(str(chikin_sales * CHIKIN_RATE)).quantize(Decimal('0'), rounding=ROUND_HALF_UP) + Decimal(str(curry_sales * CURRY_RATE)).quantize(Decimal('0'), rounding=ROUND_HALF_UP)
+chikin_cost = chikin_sales * CHIKIN_RATE
+curry_cost = curry_sales * CURRY_RATE
 
-print(f"売上高：{total_sales}、原価：{total_cost}、 粗利：{total_sales - total_cost}", end="")
+total_cost = Decimal(chikin_cost + curry_cost).quantize(Decimal('0'), rounding=ROUND_HALF_UP)
+
+print(f"売上高：{total_sales}、原価：{total_cost}、粗利：{total_sales - int(total_cost)}", end="")
