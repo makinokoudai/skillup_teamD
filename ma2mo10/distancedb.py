@@ -17,7 +17,7 @@ try:
     arr = session.query(DistanceTable.kilo).filter_by(name=arr_sta).first()
     
     # 出発駅と到着駅の東京駅からの距離を比較して距離の差を求める
-    # type(dep) -> (Decimal('0.00'),)なので0番目を取り出して距離を計算
+    # type(dep) -> (Decimal('0.00'),)なのでタプルの0番目を取り出して距離を計算
     if dep > arr:
         distance = dep[0] - arr[0]      
     else:
