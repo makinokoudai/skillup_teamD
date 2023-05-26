@@ -2,7 +2,7 @@ import sys
 
 args = sys.argv
 
-num = int(args[1])
+num:int = int(args[1])
     
 
 def prime_judge(num:int) -> bool:
