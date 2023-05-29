@@ -20,7 +20,7 @@ def input_money():
          return money
 
 
-def input_item(money:int):
+def input_item(money:int) -> str:
    '''商品名の入力を受け取る関数'''
    item_name = input("何を購入しますか（商品名/cancel）")
 
@@ -35,12 +35,12 @@ def input_item(money:int):
          return item_name
    
 
-def input_YorN() -> None:
+def input_YorN() -> bool:
    '''YかNを受け取る関数'''
    while True:
       input_flag = input("続けて購入しますか（Y/N）")
       if input_flag == 'Y' or input_flag == "N":
-         return
+         return input_flag
       else: 
          #Y/N以外が入力された際の例外処理
          print("(Y/N)だけを入力してください")
