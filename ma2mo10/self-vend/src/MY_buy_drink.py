@@ -25,9 +25,11 @@ def buy_drink(item_name:str, balance:int) -> None:
             # 購入を続けるかの入力受付
             if input_YorN() == 'Y':
                 item_name = MYin.input_item(balance)
+            # Nが入力された場合お釣りを表示して終了
             else:
                 MYchange.changedisplay(MYchange.changecalc(balance))
                 return
+        # 購入できない場合お釣りを表示して終了
         else:
             MYchange.changedisplay(MYchange.changecalc(balance))
             return 
