@@ -12,6 +12,7 @@ def display_item() -> None:
 
 
 def set_item() -> Tuple[int, str]:
+    '''入力された商品と金額を格納してして返す'''
     #金額の入力を受け付ける
     money = MYin.input_money()
     #商品名/cancelの入力を受け付ける
