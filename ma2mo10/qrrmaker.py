@@ -4,10 +4,12 @@ import sys
 
 args = sys.argv
 
-filename:str = args[1]
-cnt:int = 1
+filename:str = args[1]       # ファイル名
+cnt:int = 1                  # カウント変数
 
+# ファイルを開く
 with open(filename) as f:
+    # 1行ずつ読み込む
     lines = f.readlines()
     for line in lines:
         #QRコードを生成する
