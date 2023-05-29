@@ -3,7 +3,7 @@ from sqlalchemy import Column, Integer, VARCHAR
 from database import Base
 from database import ENGIN
 
-class MoneyTable(Base):
+class TblStock(Base):
     __tablename__ = 'tbl_stock'
     # 商品ID
     id = Column('id', VARCHAR(10), primary_key = True)
