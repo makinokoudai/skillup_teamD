@@ -1,6 +1,7 @@
 #商品の表示や何を購入するかの入力受付に関するモジュール
 import MY_input as MYin
 import MY_param as param
+from   typing import Tuple
 
 def display_item() -> None:
     '''商品の表示と入力モジュールの呼び出し'''
@@ -10,7 +11,7 @@ def display_item() -> None:
 
 
 
-def set_item() -> str:
+def set_item() -> Tuple[int, str]:
     #金額の入力を受け付ける
     money = MYin.input_money()
     #商品名/cancelの入力を受け付ける
