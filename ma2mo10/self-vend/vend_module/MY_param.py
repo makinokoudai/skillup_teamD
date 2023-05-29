@@ -1,6 +1,6 @@
 # 定数を定義するモジュール
 
-import MY_const as const
+import vend_module.MY_const as const
 
 const.LIMIT_MONEY = 10000  # 投入金額の上限
 const.MIN_PRICE = 100      # 最小の商品価格

@@ -1,7 +1,7 @@
 import sys
 from sqlalchemy import Column, Integer, VARCHAR
-from database import Base
-from database import ENGIN
+from DB.database import Base
+from DB.database import ENGIN
 
 class TblStock(Base):
     __tablename__ = 'tbl_stock'

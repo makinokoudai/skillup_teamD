@@ -1,6 +1,6 @@
 #入力関係のモジュール
-from MY_return_change import changecalc, changedisplay
-import MY_param as param
+from vend_module.MY_return_change import changecalc, changedisplay
+import vend_module.MY_param as param
 
 def input_money():
    '''入力金額を受け取る関数'''
