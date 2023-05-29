@@ -1,4 +1,3 @@
-import sqlalchemy
 from database import session
 from tables_transport import Transport
 import os
@@ -13,6 +12,5 @@ transport_list = session.query(Transport).all()
 # ファイル操作
 with open (path, mode="w", encoding="utf=8") as t:
     for info in transport_list:
-        txt = str(info.date)+str(info.seq)+info.departure+ info.arrival+info.via+str(info.amount)+"\n"
-        t.write(txt)
+        t.write(f'"{info.date}","{info.seq}","{info.departure}","{info.arrival}","{info.via}","{info.amount}"\n')
     
