@@ -1,5 +1,5 @@
-import MY_display_item as MYdisp
-import MY_buy_drink as MYbuy
+from vend_module import MY_display_item as MYdisp
+from vend_module import MY_buy_drink as MYbuy
 
 
 def main():

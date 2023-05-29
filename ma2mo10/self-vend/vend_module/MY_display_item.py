@@ -1,6 +1,6 @@
 #商品の表示や何を購入するかの入力受付に関するモジュール
-import MY_input as MYin
-import MY_param as param
+from vend_module import MY_input as MYin
+from vend_module import MY_param as param
 from   typing import Tuple
 
 def display_item() -> None:

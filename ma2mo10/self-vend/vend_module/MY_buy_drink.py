@@ -1,9 +1,9 @@
 #商品の購入に関するモジュール
-import MY_param as param
-from MY_input import input_YorN
-import MY_return_change as MYchange
-import MY_input as MYin
-import MY_display_item as MYdisp
+from vend_module import MY_param as param
+from vend_module.MY_input import input_YorN
+from vend_module import MY_return_change as MYchange
+from vend_module import MY_input as MYin
+from vend_module import MY_display_item as MYdisp
 
 def calc_balance(item_name:str, money:int) -> int:
     '''購入後の残金を計算'''
