@@ -29,9 +29,12 @@ def input_item(money:int) -> str:
       if item_name == "cancel":
          changedisplay(changecalc(money))
          return ""
-      elif item_name in param.const.item_dict:
-         item_name = input("商品名が間違っています。正しい商品名を入力してください")
+      # 正しい商品が入力されなかった場合
+      elif item_name not in param.const.item_dict:
+         print("商品名が間違っています。正しい商品名を入力してください")
+         item_name = input("何を購入しますか（商品名/cancel）")
       else:
+         # 商品名を返す
          return item_name
    
 
