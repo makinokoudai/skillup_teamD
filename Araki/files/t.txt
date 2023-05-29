@@ -1,0 +1,2 @@
+https://qiita.com/takuyanin/items/18590600d077df707923
+https://docs.sqlalchemy.org/en/14/errors.html#error-9h9h
